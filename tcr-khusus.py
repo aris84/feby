@@ -77,7 +77,7 @@ commandGroup ="""
 [Cancel]
 [Admin add @]
 [Admin remove @]
-[Adminlist]
+[Adminlist] 
 [Ban @]
 [Ban] 
 [Unban @]
@@ -102,7 +102,7 @@ Setgroup =""" Private Menu B̳O̳T̳ L̳I̳N̳E̳ E̳D̳I̳T̳E̳D̳
 [No Joinned]
 -- Joinn on/off
 """
-KAC = [cl,ki,kk,ks,kc,ka]
+KAC = [cl,ki,kk,kc,ks,ka]
 DEF=[ki,kk,kc,ks,ka]
 SIRI = [na,nb,nc]
 mid = cl.getProfile().mid
@@ -115,19 +115,20 @@ s1mid = na.getProfile().mid
 s2mid = nb.getProfile().mid
 s3mid = nc.getProfile().mid
 
-Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,s1mid,s2mid,s3mid]
+Bots=["u17ce7606c05a31e55cfccb35487cfbf3","uc19d454151468168c4f27a6f63ef84b4","u1a119dcfe49c85afe7583c130b107490","u17521836c666106455f0bcde1d1fb2d0","uf0c1de0f62d2a9390093fc1fec3d2088","u2330012c537c193bafe0ae2be2f1fdcf","u1a49cc167e3107826637a4a0052ceecc","u848339da8f4d7925af4edef909fc075f","u364ca880ccef9f2440b283c41ad098f9"]
 admin=["u17ce7606c05a31e55cfccb35487cfbf3"]
-owner=["u17ce7606c05a31e55cfccb35487cfbf3"]
+owner=["uc19d454151468168c4f27a6f63ef84b4"]
+adminSA = Bots + admin + owner
 wait = {
     'contact':False,
-    'autoJoin':True,
+    'autoJoin':False,
     'autoCancel':{"on":True,"members":1},
     'leaveRoom':True,
     'timeline':False,
     'autoAdd':True,
     'message':"Thanks for add",
     "lang":"JP",
-    "comment":"Thanks for add me",
+    "comment":"like status",
     "likeOn":False,	
     "commentOn":False,
     "commentBlack":{},
@@ -141,7 +142,7 @@ wait = {
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
-    "Protectgr":True,
+    "Protectgr":False,
     "Protectjoin":False,
     "Protectcancl":False,
     "protectionOn":False,
@@ -280,17 +281,26 @@ def bot(op):
         #------Protect Group Kick start------#
         if op.type == 11:
            if wait["Protectgr"] == True:
-               if op.param2 not in Bots:
+               if op.param2 not in adminSA:
                    G = ka.getGroup(op.param1)
                    G.preventJoinByTicket = True
                    random.choice(DEF).kickoutFromGroup(op.param1,[op.param2])
                    random.choice(DEF).updateGroup(G)
+		
+        if op.type == 11:
+           if wait["Protectgr"] == False:
+               if op.param2 not in adminSA:
+                   G = ka.getGroup(op.param1)
+                   G.preventJoinByTicket = True
+                   random.choice(DEF).kickoutFromGroup(op.param1,[op.param2])
+                   random.choice(DEF).updateGroup(G)
+		
         #------Protect Group Kick finish-----#
 
         #------Cancel Invite User start------#
         if op.type == 13:
            if wait["Protectcancl"] == True:
-               if op.param2 not in Bots:
+               if op.param2 not in adminSA:
                   group = ka.getGroup(op.param1)
                   gMembMids = [contact.mid for contact in group.invitee]
                   random.choice(DEF).cancelGroupInvitation(op.param1, gMembMids)
