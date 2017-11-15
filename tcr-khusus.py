@@ -4,35 +4,51 @@ import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
-
-#kk = LINETCR.LINE()
-#kk.login(qr=True)
-#kk.loginResult()
-
 cl = LINETCR.LINE()
-cl.login(token="EmL3D2oE9RRxVoAOKzZ4.k2K4G8GMT6aSz/sjRTTG5a.qpAmHCVXMV3f9W4XvlcvbEsz0t10qntOLshnyU+dN7M=")
+cl.login(token="EmErmzt2uqNZeWbRGux3.f852bSbAmEvC+mS1shZ78W.zgam557SUBA+ktxNtboBs/XULUzs9E/tNhboVPpBOHk=")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="EmfyX0UkQqKskzNLtoLd.jmDhjpfohb2AknjpNg7Ohq.Ln+GV5R+gRJtGQXoEb4O9MZhkzseOR2mWZqJ6pIchSE=")
+ki.login(token="Em4xfv0usCIBrwk2vY34.Wz1fqvfgGwJe8NPVy//eTa.Bc21zm39ejAIUjGLsUQHZoOQ8CLOgp76Vmhmr9Y1/co=")
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(token="EmzdmtlfMuMoXkgrh7C4.K0P4W4NCLdY+iRhfOkj9Xa.uzpLhbfU/muQOw0sAfsizKe+6zMN/y5yBNRw8C8AFRw=")
+kk.login(token="EmFk7U4tCAdgmEDJbrB0.gHgDZ/sCHA+NwdWtcXb0Ka.Up8tWZS2lbJPMjeS/NsoUTYC+Fz64mvx0dwKPNiJjWM=")
 kk.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(token="Em91P8ZEJ1AROz7FjGFd.Vn3x60GkkbhMA+Th+FV6tq.xw/pByeowDkbJHEcdSEvdiDloBpZkSxCf/9/k4Vy4Rs=")
+ks.login(token="EmGeFr6xsKlqSrTRNaP0.f1iynSzMegrv8lZEhr/Y0a.QdaLgEE4nFSayBChPGw6yx3XEBJS4yYVKLIJ2kUWSrg=")
 ks.loginResult()
 
+kc = LINETCR.LINE()
+kc.login(token="EmRT1WEQfd5u26daIoY8.8mhEd2lsQtKaK+WF7d0GIa.WvbAcWkNgNGNfPmKAwZZgOtWdOdMTs0rcCBAvmsdIEY=")
+kc.loginResult()
 
+ka = LINETCR.LINE()
+ka.login(token="EmuSlFJTZDX9XhdmSz0f.iZablfn8gtUV4k4R4Vh9ZW.UdQfagCs1n576LWCUcxCnZ+hP9DPDwoEo++lgUwgee0=")
+ka.loginResult()
+
+na = LINETCR.LINE()
+na.login(token="EmDF7WvfIRJNWKyF4Zsc.gKNmfN4Xb4jMn6sGbsZUZa.BxEupr1GXdhwuyeZ8Ls9xZF2K7ts4ap4aTQYhIBj8Ro=")
+na.loginResult()
+
+nb = LINETCR.LINE()
+nb.login(token="Em10Jw6TbiAIMN7UUwTf.Him52O9nEswVtT75cFWhxW.cghuHUkbpu3haPABWIUSClnF5Janl4a4ouXm+RGRSkQ=")
+nb.loginResult()
+
+nc = LINETCR.LINE()
+nc.login(token="Emsoi8Y1LFiohtQMJBB9.nKYOGmZVNYraSOpegTcy/q.I+HPrrlepr3DuWu64iVr9HrlgfkV/yeDacOsOT7ro0g=")
+nc.loginResult()
+
+print "\n\n👉🅺🅴🅱🅾🆃🅰🅽 🅻🅾🅴👈\n\n"
 reload(sys)
-print "login success"
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" 〘тєαм вσт є∂ιтє∂〙
-
-☁̸҉̸.̸҉ =ȼ๏ʍʍąɲď β๏ţ  ̸҉̸.̸҉̸☁
+commandBot =""" 〘тєαм вσт〙
+   F̷̱̗̗̻̎̑̌͝a̴̘͙͎͖͆̓̊͝k̴̼̼̯̯̔̄̅̃ẻ̸̫̲͓̋̋͒ͅ ̴̛̲͚̙̹̀̏̌A̸̭͓̬̺̾͑̒̕r̵̺̟͖̱͗̾̏͑t̸̥̺̭͔̽̈́́́i̶̢̨̜͎͊̊̑͠s̸̨͎͍̼̈́̆̐͠
+╔══════════════════════  
+║  C̷͚̪̹͙̄̎̓͊Ò̷͕̯͖̯̈́͐̕M̷̨̦̰͚̓̓̒͘M̶̲̥̩̐̌͐͝ͅA̷̢̻̞͈̿̓͐͛Ǹ̸͉̩̙̥̄̍̽D̴͕͕͎̙̀͋̈́͘ ̶͖͉͎̮̈̅̓͐B̸̺̦̟͈̎̆̿͐Ỏ̷̢͖̞̮͐͋͆T̸̻͈̥̫̄̌̃͠
+╠══════════════════════
 [Me]
 [My mid]
 [Bot?]
@@ -48,7 +64,12 @@ helpMessage =""" 〘тєαм вσт є∂ιтє∂〙
 [cek]
 [Point]
 [Creator]
-C̳O̳M̳M̳A̳N̳D̳ O̳N̳ G̳R̳O̳U̳P̳
+╚════════════════
+"""
+commandGroup ="""
+╔══════════════════════ 	
+║  C̵̞̞͓͕͌̆̈́͝Ó̴̮̰͂́̈́ͅͅM̸͖̹͕͋͌͌͠ͅM̸͖̤̩̾͑̚̚͜Â̷̛̼͔̰̫͌̔Ņ̶͚̪̭̓́̾̄D̴͇̳̥̯̆̈̒͑ ̸̛͍̻̝̼̏̅̓O̷̤̟̜̦͒̌̽̿N̶̨͍̖̟͌͛͠͠ ̶̢̬̤̝̄͐̏͋Ĝ̵̮͍̝̝̽̈̂R̵̮̝̗̹̀͂͘͝O̶̰̘͕͂̑̍̀ͅU̸̦̩͎͋͌̍͛͜P̶̯̻͈̯͂̈́̿͑
+╠══════════════════════
 [Set group]
 [Gn namagroup]
 [Open url]
@@ -81,16 +102,22 @@ Setgroup =""" Private Menu B̳O̳T̳ L̳I̳N̳E̳ E̳D̳I̳T̳E̳D̳
 [No Joinned]
 -- Joinn on/off
 """
-KAC=[cl,ki,kk,kc]
-DEF=[ki,kk,kc]
+KAC = [cl,ki,kk,ks,kc,ka]
+DEF=[ki,kk,kc,ks,ka]
+SIRI = [na,nb,nc]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
+Dmid = ks.getProfile().mid
+Emid = ka.getProfile().mid
+s1mid = na.getProfile().mid
+s2mid = nb.getProfile().mid
+s3mid = nc.getProfile().mid
 
-Bots=[mid,Amid,Bmid,Cmid,]
-admin=["uec13f3c18fd696fe7c2ffd4c7e001a31"]
-owner=["uec13f3c18fd696fe7c2ffd4c7e001a31"]
+Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,s1mid,s2mid,s3mid]
+admin=["u17ce7606c05a31e55cfccb35487cfbf3"]
+owner=["u17ce7606c05a31e55cfccb35487cfbf3"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -101,22 +128,23 @@ wait = {
     'message':"Thanks for add",
     "lang":"JP",
     "comment":"Thanks for add me",
-    "commentOn":True,
+    "likeOn":False,	
+    "commentOn":False,
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cName":"☁̸҉̸P̸A̸I̸N̸",
-    "cName2":"☁̸҉̸I̸T̸A̸C̸H̸I̸",
-    "cName3":"☁̸҉̸O̸B̸I̸T̸O̸",
-    "cName4":"☁҉đαїđαřα",
+   # "cName":"☁̸҉̸P̸A̸I̸N̸",
+   # "cName2":"☁̸҉̸I̸T̸A̸C̸H̸I̸",
+   # "cName3":"☁̸҉̸O̸B̸I̸T̸O̸",
+   # "cName4":"☁҉đαїđαřα",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
     "Protectgr":True,
     "Protectjoin":False,
     "Protectcancl":False,
-    "protectionOn":True,
+    "protectionOn":False,
     "atjointicket":True,
     }
 
