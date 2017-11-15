@@ -291,10 +291,25 @@ def bot(op):
            if wait["Protectgr"] == False:
                if op.param2 not in adminSA:
                    G = ka.getGroup(op.param1)
-                   G.preventJoinByTicket = True
-                   random.choice(DEF).kickoutFromGroup(op.param1,[op.param2])
-                   random.choice(DEF).updateGroup(G)
-		
+                   G.preventJoinByTicket = False
+                   ka.updateGroup(G)
+                   invsend = 0
+                   Ticket = ka.reissueGroupTicket(op.param1)
+                   na.acceptGroupInvitationByTicket(op.param1,Ticket) 
+                   time.sleep(0.2)
+                   try:
+                       na.kickoutFromGroup(op.param1,[op.param2])
+                       print (op.param1,[op.param2])
+                       na.sendText(op.param1,"Kicker emang pantas dimusnahkan!!!")  
+                       na.leaveGroup(op.param1)                   
+                       G = ka.getGroup(op.param1)
+                       G.preventJoinByTicket = True                  
+                       ka.updateGroup(G)
+                       G.preventJoinByTicket(G)
+                       ka.updateGroup(G)
+                   except:
+                          pass
+
         #------Protect Group Kick finish-----#
 
         #------Cancel Invite User start------#
